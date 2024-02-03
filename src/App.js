@@ -1,6 +1,6 @@
 import React from "react";
 import LandingPage from "./Screens/LandingPage";
-import useReady from "./Components/useReady";
+import useReady from "../src/Components/useReady";
 import MyLoader from "./Screens/MyLoader";
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import AboutPage from "./Screens/AboutPage";
