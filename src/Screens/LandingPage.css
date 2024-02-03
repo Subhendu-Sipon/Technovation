@@ -30,6 +30,37 @@
     transform: translate(-50%, -50%);
 } 
 
+#BottomButtonsLeft{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 500px;
+    padding-right: 300px; */
+    left: 10%;
+}
+
+#BottomButtonsMiddle{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+}
+
+#BottomButtonsRight{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 500px;
+    padding-right: 300px; */
+    right: 10%;
+}
+
 @media screen and (max-width:600px) {
     .logo{
         height: 90px;
@@ -64,5 +95,27 @@
         top: 61%;
         left: 50%;
         transform: translate(-50%, -50%);
+    } 
+
+     #BottomButtonsLeft{
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 500px;
+        padding-right: 300px; */
+        left: 5%;
+    }
+    
+    #BottomButtonsRight{
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 500px;
+        padding-right: 300px; */
+        right: 5%;
     } 
 }

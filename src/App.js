@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 
 function App() {
   
-  const { ready } = useReady(3000);
+  const { ready } = useReady(1000);
 
   return (
     <div className="App">
