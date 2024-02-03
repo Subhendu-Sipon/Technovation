@@ -21,3 +21,48 @@
     right: 15px;
 }
 
+.LandingTitleT img{
+    width: 798px;
+    height: 251px;
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+@media screen and (max-width:600px) {
+    .logo{
+        height: 90px;
+        width: 90px;
+    }
+    
+    .igitLogo{
+        height: 70px;
+        width: 70px;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .LandingTitleT img{
+        width: 350px;
+        height: 100px;
+        position: absolute;
+        top: 67.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+}
+
+@media screen and (min-width: 800px) and (max-width:1500px){
+    .LandingTitleT img{
+        width: 822px;
+        height: 250px;
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+}
