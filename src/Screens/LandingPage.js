@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './LandingPage.css'
 import Logo from '../Assets/T Technovation.png'
 import igitLogo from '../Assets/IgitLogo.png'
 import LandingTitle from '../Assets/WhiteFontTitle.jpg'
-import BubblyButton from '../Components/BubblyButton'
 import { Link } from "react-router-dom";
+import ModalContent from './ModalContent'
 
  const LandingPage = () => {
+  const [isOpen , setIsOpen] = useState(false)
   return (
     <section className='fullPage'>   
         <img className='logo' src={Logo} alt='logo'></img>
@@ -19,13 +20,16 @@ import { Link } from "react-router-dom";
           <div class="container text-center">
             <div class="row">
               <div class="col">
-                <BubblyButton name='Sign Up' path='/signup' />
+                <button className='bubbly-button'>Sign Up</button>
               </div>
               <div class="col">
-                <BubblyButton name='Explore' path='/about' />
+                <button  onClick={()=> setIsOpen(true)} className='bubbly-button'>Explore</button>
+                <ModalContent open={isOpen} onClose={()=> setIsOpen(false)}/>
               </div>
               <div class="col">
-                <BubblyButton name='Login' />
+                <Link to='/explore'>
+                <button className='bubbly-button'>Login</button>
+                </Link>
               </div>
             </div>
           </div>
