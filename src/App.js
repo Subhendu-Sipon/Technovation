@@ -4,6 +4,7 @@ import useReady from "../src/Components/useReady";
 import MyLoader from "./Screens/MyLoader";
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import AboutPage from "./Screens/AboutPage";
+import Modal from "./Components/Modal";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,15 @@ const router = createBrowserRouter([
     path: "/about",
     element: <AboutPage />,
   },
+  {
+    path: "/modal",
+    element: <Modal />,
+  },
 ]);
 
 function App() {
   
-  const { ready } = useReady(3000);
+  const { ready } = useReady(1);
 
   return (
     <div className="App">

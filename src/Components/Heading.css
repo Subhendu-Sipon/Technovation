@@ -2,6 +2,8 @@
     text-align: center;
     margin-top: 20px;
     font-family: 'New Tegomin', serif;
+    font-family: 'Single Day', cursive; 
     text-decoration: underline;
+    text-underline-offset: 3px;
     text-decoration-style: wavy;
 }

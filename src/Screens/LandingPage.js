@@ -4,9 +4,9 @@ import Logo from '../Assets/T Technovation.png'
 import igitLogo from '../Assets/IgitLogo.png'
 import LandingTitle from '../Assets/WhiteFontTitle.jpg'
 import BubblyButton from '../Components/BubblyButton'
+import { Link } from "react-router-dom";
 
-
-function LandingPage() {
+ const LandingPage = () => {
   return (
     <section className='fullPage'>   
         <img className='logo' src={Logo} alt='logo'></img>
@@ -19,10 +19,10 @@ function LandingPage() {
           <div class="container text-center">
             <div class="row">
               <div class="col">
-                <BubblyButton name='Sign Up' />
+                <BubblyButton name='Sign Up' path='/signup' />
               </div>
               <div class="col">
-                <BubblyButton name='Explore' />
+                <BubblyButton name='Explore' path='/about' />
               </div>
               <div class="col">
                 <BubblyButton name='Login' />
@@ -30,8 +30,7 @@ function LandingPage() {
             </div>
           </div>
           </div>
-        </nav>
-          
+        </nav> 
     </section> 
     
   )

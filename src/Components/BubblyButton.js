@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './BubblyButton.css';
+import { Link } from 'react-router-dom';
 
 const BubblyButtonsContainer = (props) => {
   const animateButton = (e) => {
@@ -28,7 +29,9 @@ const BubblyButtonsContainer = (props) => {
 
   return (
     <div>
+      <Link to={props.path}>
       <button className="bubbly-button">{props.name}</button>
+      </Link>
     </div>
   );
 };
