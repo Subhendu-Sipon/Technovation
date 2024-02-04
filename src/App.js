@@ -4,7 +4,7 @@ import useReady from "../src/Components/useReady";
 import MyLoader from "./Screens/MyLoader";
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import AboutPage from "./Screens/AboutPage";
-import Modal from "./Components/Modal";
+import Modal from "./Screens/Modal";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <AboutPage />,
   },
   {
-    path: "/modal",
+    path: "/explore",
     element: <Modal />,
   },
 ]);

@@ -1,0 +1,16 @@
+#buttonOpen{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: 20px;
+    
+
+}
+#buttonContent{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    justify-content: center;
+    text-align: center;
+
+}
