@@ -1,43 +1,50 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './LandingPage.css'
 import Logo from '../Assets/T Technovation.png'
 import igitLogo from '../Assets/IgitLogo.png'
 import LandingTitle from '../Assets/WhiteFontTitle.jpg'
 import { Link } from "react-router-dom";
 import ModalContent from './ModalContent'
+import Exploring from '../Components/Exploring'
 
- const LandingPage = () => {
-  const [isOpen , setIsOpen] = useState(false)
+const LandingPage = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <section className='fullPage'>   
-        <img className='logo' src={Logo} alt='logo'></img>
-        <img className='igitLogo' src={igitLogo} alt='igitLogo'></img>
-        <div className='LandingTitleT'>
-            <img className='LandingTitle' src={LandingTitle} alt='LandingTitle'></img>
-        </div>
-        <nav class="navbar fixed-bottom">
-          <div class="container-fluid">
+    <section className='fullPage'>
+      <img className='logo' src={Logo} alt='logo'></img>
+      <img className='igitLogo' src={igitLogo} alt='igitLogo'></img>
+      <div className='LandingTitleT'>
+        <img className='LandingTitle' src={LandingTitle} alt='LandingTitle'></img>
+       
+      </div>
+          <div id='explore-Btn'>
+            < Exploring />
+          </div>
+      <nav class="navbar fixed-bottom">
+        <div class="container-fluid">
           <div class="container text-center">
             <div class="row">
               <div class="col">
+                <Link to='/signup'>
                 <button className='bubbly-button'>Sign Up</button>
+                </Link>
               </div>
               <div class="col">
-                <button  onClick={()=> setIsOpen(true)} className='bubbly-button'>Explore</button>
-                <ModalContent open={isOpen} onClose={()=> setIsOpen(false)}/>
+                {/* <button  onClick={()=> setIsOpen(true)} className='bubbly-button'>Explore</button>
+                <ModalContent open={isOpen} onClose={()=> setIsOpen(false)}/> */}
               </div>
               <div class="col">
-                <Link to='/explore'>
-                <button className='bubbly-button'>Login</button>
+                <Link to='/login'>
+                  <button className='bubbly-button'>Login</button>
                 </Link>
               </div>
             </div>
           </div>
-          </div>
-        </nav> 
-    </section> 
-    
-    
+        </div>
+      </nav>
+    </section>
+
+
   )
 }
 

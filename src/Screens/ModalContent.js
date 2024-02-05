@@ -8,7 +8,8 @@ function ModalContent({open, onClose}) {
       position: 'absolute',
       top: '10px',
       right: '10px',
-      padding: '20px',
+      // bottom :'50px',
+      padding: '10px',
       backgroundColor: 'red',
       border: 'none'
     }
