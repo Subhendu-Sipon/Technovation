@@ -1,5 +1,5 @@
 import React from 'react'
-import Headings from '../Components/Headings'
+import Headings from '../../Components/Headings'
 import './AboutPage.css'
 import { Link } from 'react-router-dom'
 
