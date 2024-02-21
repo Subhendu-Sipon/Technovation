@@ -1,6 +1,6 @@
 import React from 'react'
 import Headings from '../../Components/Headings'
-import './AboutPage.css'
+import '../CSS/AboutPage.css'
 import { Link } from 'react-router-dom'
 
 function AboutPage() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './ModalContent.css'
+import '../CSS/ModalContent.css'
 import { Link } from 'react-router-dom'
 
 function ModalContent({open, onClose}) {

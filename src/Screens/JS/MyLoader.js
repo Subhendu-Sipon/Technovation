@@ -1,5 +1,5 @@
 import React from 'react'
-import './MyLoader.css'
+import '../CSS/MyLoader.css'
 function MyLoader() {
   return (
     <div id="loadingPage">

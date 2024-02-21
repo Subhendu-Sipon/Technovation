@@ -2,7 +2,7 @@
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0;
-    background-image: url('../Assets/AboutBackground.jpg');
+    background-image: url('../../Assets/AboutBackground.jpg');
     background-size: cover;
     background-position: center;
 }

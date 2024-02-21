@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './LandingPage.css'
-import Logo from '../Assets/T Technovation.png'
-import igitLogo from '../Assets/IgitLogo.png'
-import LandingTitle from '../Assets/WhiteFontTitle.jpg'
+import '../CSS/LandingPage.css'
+import Logo from '../../Assets/T Technovation.png'
+import igitLogo from '../../Assets/IgitLogo.png'
+import LandingTitle from '../../Assets/WhiteFontTitle.jpg'
 import { Link } from "react-router-dom";
 import ModalContent from './ModalContent'
 import Exploring from '../../Components/Exploring'
