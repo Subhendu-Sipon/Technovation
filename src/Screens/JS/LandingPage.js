@@ -5,7 +5,6 @@ import igitLogo from '../../Assets/IgitLogo.png'
 import LandingTitle from '../../Assets/WhiteFontTitle.jpg'
 import { Link } from "react-router-dom";
 import ModalContent from './ModalContent'
-import Exploring from '../../Components/Exploring'
 
 const LandingPage = () => {
   const [isOpen, setIsOpen] = useState(false)

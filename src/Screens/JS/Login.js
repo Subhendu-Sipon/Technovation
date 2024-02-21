@@ -1,29 +1,23 @@
-import React from 'react'
+import React from 'react';
+import styles from '../CSS/LoginPage.module.css';
 
-function Login() {
+export default function LoginPage() {
   return (
-    <div className='LoginBackground'>
-      <div className='LoginContainer'>
-        <div className='LoginHead'>LOGIN</div>
-          <form>
-            <div class="mb-3">
-              <label for="LoginEmail" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="LoginEmail" aria-describedby="emailHelp" />
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="LoginPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="LoginPassword" />
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="loginBtn">Submit</button>
-          </form>
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <h2 className={styles.title}>Login</h2>
+        <form>
+          <div className={styles['form-group']}>
+            <input type="email" className={styles['form-control']} placeholder="Email" />
+          </div>
+          <div className={styles['form-group']}>
+            <input type="password" className={styles['form-control']} placeholder="Password" />
+          </div>
+          <button type="submit" className={styles.btn}>
+            Login
+          </button>
+        </form>
       </div>
     </div>
-  )
+  );
 }
-
-export default Login
