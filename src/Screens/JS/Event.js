@@ -1,10 +1,12 @@
 import React from 'react'
 import '../CSS/Event.css'
+import BackButton from '../../Components/BackButton'
 
 function Event() {
   
   return (
     <div className='bodyEvent'>
+      <BackButton />
         <div className="containerEventBody">
 
           <div class="parent card1">

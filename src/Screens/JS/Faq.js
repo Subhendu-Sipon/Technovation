@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../CSS/Faq.module.css";
+import BackButton from "../../Components/BackButton";
 
 function Faq() {
   const [activeIndex, setActiveIndex] = React.useState(null);
@@ -38,9 +39,7 @@ function Faq() {
 
   return (
     <div className={styles.faqcontainer}>
-      <div className={styles.faqbackbutton}>
-        <a href="javascript:history.back()" className={styles.faqback}>Back</a>
-      </div>
+      <BackButton />
       <div className={styles.faqcard}>
         <h2 className={styles.faqtitle}>FAQS(Frequently Asked Questions)</h2>
         {items.map((item, index) => (

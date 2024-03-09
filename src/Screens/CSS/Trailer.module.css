@@ -1,0 +1,13 @@
+.bgtrailer {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    background-image: url('../../Assets/TrailerBg.jpg');
+  }
+  
+  .instacard {
+    width: 328px; 
+    margin-bottom: 20px; 
+    margin-top: 10px;
+  }
+  

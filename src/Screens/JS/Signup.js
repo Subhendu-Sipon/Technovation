@@ -1,14 +1,11 @@
 import React from "react";
 import styles from "../CSS/LoginPage.module.css";
+import BackButton from "../../Components/BackButton";
 
 export default function LoginPage() {
   return (
     <div className={styles.container}>
-      <div className={styles.loginbackbutton}>
-        <a href="javascript:history.back()" className={styles.loginback}>
-          Back
-        </a>
-      </div>
+      <BackButton />
       <div className={styles.card}>
         <h2 className={styles.title}>Signup</h2>
         <form>

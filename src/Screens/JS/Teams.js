@@ -1,8 +1,11 @@
 import React from 'react'
+import BackButton from '../../Components/BackButton'
 
 function Teams() {
   return (
-    <div>This is our teams </div>
+    <div>
+      <BackButton />
+    </div>
   )
 }
 

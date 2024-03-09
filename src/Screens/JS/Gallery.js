@@ -1,8 +1,11 @@
 import React from 'react'
+import BackButton from '../../Components/BackButton'
 
 function Gallery() {
   return (
-    <div>THis is the gallery page</div>
+    <div>
+      <BackButton />
+    </div>
   )
 }
 
